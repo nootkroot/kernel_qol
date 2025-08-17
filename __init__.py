@@ -1,7 +1,5 @@
-from binaryninja import *
+from .printk.render import PrintkRenderLayer
+from .printk.workflow import PrintkWorkflow
 
-def do_nothing(bv):
-	show_message_box("Do Nothing", "Congratulations! You have successfully done nothing.\n\n" +
-					 "Pat yourself on the back.", MessageBoxButtonSet.OKButtonSet, MessageBoxIcon.ErrorIcon)
-
-PluginCommand.register("Useless Plugin", "Basically does nothing", do_nothing)
+PrintkRenderLayer.register()
+PrintkWorkflow.register()
