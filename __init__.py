@@ -1,5 +1,3 @@
-from .printk.render import PrintkRenderLayer
-from .printk.workflow import PrintkWorkflow
+from .printk.string import PrintkStringRecognizer
 
-PrintkRenderLayer.register()
-PrintkWorkflow.register()
+PrintkStringRecognizer().register()
